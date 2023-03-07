@@ -1,4 +1,6 @@
 
+from django.http import HttpResponseRedirect
+from django.urls import reverse
 from .forms import LoanBookForm
 import datetime
 from .models import Book, Author, BookInstance, Genre
@@ -8,8 +10,7 @@ from django.contrib.auth.mixins import LoginRequiredMixin
 from django.views.generic.edit import CreateView, UpdateView
 from django.contrib import messages
 from django.shortcuts import redirect
-from django.http import HttpResponseRedirect
-from django.urls import reverse
+
 
 def index(request):
     """View function for home page of site."""

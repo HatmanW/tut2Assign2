@@ -13,18 +13,18 @@
 
   <div style="margin-left:20px;margin-top:20px">
     <h4>Books</h4>
-    {% if book in author.book_set.all >= 0 %}
+    {% if book in author.book_set.all %}
         {% for book in author.book_set.all %}
 
             <hr>
             <a href="{{ book.get_absolute_url }}">{{ book.title }}</a>
         {% endfor %}
     {% else %}
-        <p>No books available</p>
+        <p>There are no books available.</p>
     {% endif %}
   </div>
 
-  <a href="{% url 'book_list' %}">book list</a>
+  <a href="{% url 'author_list' %}">book list</a>
 
 {% endblock %}
 

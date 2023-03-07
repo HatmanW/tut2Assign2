@@ -48,8 +48,8 @@ class Book(models.Model):
     # ManyToManyField used because genre can contain many books. Books can cover many genres.
     genre = models.ManyToManyField(Genre, help_text='Select a genre for this book')
 
-    #this breaks the server. :(
-    #author_image = models.ImageField(upload_to='images/', null=True, blank=True)
+    #this breaks the server.
+    book_image = models.ImageField(upload_to='images/', null=True, blank=True)
 
     def __str__(self):
         """String for representing the Model object."""

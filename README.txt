@@ -1,12 +1,7 @@
-This is the read me for the Tutorial1B portion of setting up a baseic Django library. 
+This is the read me or the full proper submission. 
 
-I'm unsure if this is required but I added it anyway so that a user would not get completely lost.
-The contents should be:
-Catalog
-locallibrary
-templates
-.getignore (All lower case one word and very important!!!)
-db.sqlite3 
-Manage.py
-README.txt (This readme file)
-requirements.txt 
+this should have the image functionality as well as all the other required functionality. 
+Doing If statements in HTML, as well as the image functionality is... interesting. 
+
+Either way here's the fun!
+
